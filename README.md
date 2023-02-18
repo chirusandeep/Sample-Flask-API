@@ -12,18 +12,14 @@ This code creates a Flask application with four routes. The first route is a GET
 
 # Documentaion:
 
-This Flask application implements four routes: GET, POST, PUT, and DELETE. 
+This is a Flask application that provides routes for getting, creating, updating, and deleting users in JSON format. 
 
-### GET Route 
-The GET route '/users' returns a list of users in JSON format. 
-The GET route '/users/<int:user_id>' returns the details of a specific user in JSON format. 
+The `/users` route returns a list of users in JSON format. 
 
-### POST Route 
-The POST route '/users' creates a new user with the provided name and age in JSON format. 
+The `/users/<int:user_id>` route returns the details of a specific user in JSON format. 
 
-### PUT Route 
-The PUT route '/users/<int:user_id>' updates an existing user with the provided name and age in JSON format. 
+The `/users` route with the POST method creates a new user in JSON format. 
 
-### DELETE Route 
-The DELETE route '/users/<int:user_id>' deletes an existing user from the list of users in JSON format.
+The `/users/<int:user_id>` route with the PUT method updates an existing user in JSON format. 
 
+The `/users/<int:user_id>` route with the DELETE method deletes an existing user in JSON format.
